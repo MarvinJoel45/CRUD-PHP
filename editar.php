@@ -54,7 +54,7 @@
                         </div>
                         <div class="mb-2">
                             <button type="submit" class="btn btn-primary">Guardar</button>
-                            <a href="Index.php" class="btn btn-secondary">Cancelar</a>
+                            <a href="index.php" class="btn btn-secondary">Cancelar</a>
                         </div>
                     <?php } ?>
                     </form>
@@ -74,7 +74,7 @@
                     $sql = "update persona set nombre='" . $nombre . "',apellido='" . $apellido . "',sexo='" . $sexo . "',edad='" . $edad . "' where id='" . $idpersona . "'";
                     mysqli_query($conexion, $sql);
                     if ($nombre = 1) {
-                        header("location:Index.php");
+                        header("location:index.php");
                     }
                 }
                 ?>

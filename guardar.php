@@ -41,7 +41,7 @@
                     </div>
                     <div>
                         <button type="submit" class="btn btn-primary">Guardar</button>
-                        <a href="Index.php" class="btn btn-secondary">Cancelar</a>
+                        <a href="index.php" class="btn btn-secondary">Cancelar</a>
                     </div>
                 </form>
             </div>
@@ -61,7 +61,7 @@
         $sql = "insert into persona(nombre,apellido,sexo,edad) values('" . $nombre . "','" . $apellido . "','" . $sexo . "','" . $edad . "')";
         mysqli_query($conexion, $sql);
         if ($nombre = 1) {
-            header("location:Index.php");
+            header("location:index.php");
         }
     } ?>
 
